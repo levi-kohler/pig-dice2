@@ -1,3 +1,5 @@
-export default function Player() {
-  
+export default function Player(roll, roundScore, totalScore) {
+  this.roll = roll;
+  this.roundScore = roundScore;
+  this.totalScore = totalScore;
 }
