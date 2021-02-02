@@ -7,4 +7,10 @@ describe("Player", () => {
     expect(player.roundScore).toEqual(0);
     expect(player.totalScore).toEqual(0);
   });
+
+  test("should return a random number between 1-6", () => {
+    const player = new Player(0, 0, 0);
+    expect(player.rollDice()).toEqual(1 || 2 || 3 || 4 || 5 || 6); 
+  });
 });
+

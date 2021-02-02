@@ -3,3 +3,7 @@ export default function Player(roll, roundScore, totalScore) {
   this.roundScore = roundScore;
   this.totalScore = totalScore;
 }
+
+Player.prototype.rollDice = function() {
+
+};
