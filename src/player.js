@@ -5,5 +5,5 @@ export default function Player(roll, roundScore, totalScore) {
 }
 
 Player.prototype.rollDice = function() {
-
+  return Math.floor((Math.random() * 6) + 1);
 };
