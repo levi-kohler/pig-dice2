@@ -10,7 +10,11 @@ describe("Player", () => {
 
   test("should return a random number between 1-6", () => {
     const player = new Player(0, 0, 0);
-    expect(player.rollDice()).toEqual(1 || 2 || 3 || 4 || 5 || 6); 
+    expect(player.rollDice()).toEqual(expect.any(Number));   //player.roll = 
+  });
+
+  test("should return an updated value to totalscore from roundscore", () => {
+    const player = new Player(0, 10, 0);
+    expect(player.hold()).toEqual(10);
   });
 });
-
